@@ -44,7 +44,7 @@ h3 {
   margin-top: 60px;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h4 {
   color: white;
@@ -54,6 +54,9 @@ h4 {
   h1,
   h3 {
     margin-top: 10px;
+  }
+  h1 {
+    font-size: 2rem;
   }
   h4 {
     margin-top: 10px;
