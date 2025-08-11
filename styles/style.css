@@ -1,8 +1,28 @@
+/*My font styles*/
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .hero {
   background-image: linear-gradient(
-      rgba(138, 2, 108, 0.7),
+      rgba(138, 2, 108, 0.9),
       rgb(250, 222, 9, 0.3),
-      rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 1)
     ),
     url("../images/manhatten.jpg");
   background-size: cover;
@@ -18,18 +38,14 @@ header {
   margin: 0 auto;
 }
 
-h1 {
-  text-align: center;
+h1,
+h3 {
   color: white;
+  margin-top: 60px;
+}
+h1 {
   font-size: 2rem;
 }
-
-h3 {
-  text-align: center;
-  color: white;
-  font-size: 1.5rem;
-}
-
 p {
   color: white;
 }
