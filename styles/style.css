@@ -18,24 +18,23 @@
   font-style: normal;
 }
 
+body {
+  background-color: #211d39;
+}
+
 .hero {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(138, 2, 108, 0.4),
-      rgba(0, 0, 0, 0.9)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/Plattsburgh-monument-city-hall_Credit-Bruce-Carlin-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-sizing: border-box;
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 header {
   z-index: 1000;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 h1,
@@ -53,7 +52,7 @@ h4 {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
   h1,
   h3 {
     margin-top: 10px;
@@ -65,7 +64,8 @@ h4 {
     margin-top: 10px;
   }
   .hero {
-    padding: 20px 10px;
+    margin: 0;
+    padding: 20px;
   }
 }
 
@@ -81,8 +81,9 @@ h4 {
   border-radius: 6px;
   cursor: pointer;
   font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(241, 235, 241, 0.2);
+
   transition: all 90ms ease-in-out;
   z-index: 1000;
 }
@@ -91,8 +92,119 @@ h4 {
   background: linear-gradient(
     to left,
     rgba(138, 2, 108, 1),
-    rgba(240, 230, 156, 0.3),
     rgba(138, 2, 108, 1)
   );
   color: rgb(251, 229, 238);
+  opacity: 0.9;
+}
+
+footer {
+  color: white;
+  z-index: 1000;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/Eagle_Monument-1782782929-612x612.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  z-index: 1000;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.about-me-link {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .about-me-section {
+    display: none;
+  }
+
+  .footer-content {
+    display: contents;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-me-link {
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    max-width: fit-content;
+    background-color: white;
+    color: #211d39;
+    margin: 0 auto;
+  }
+}
+
+.my-city {
+  color: white;
+}
+
+.my-city-container {
+  padding: 20px;
+  background-image: url("images/koffee-kat.jpg");
+  border-radius: 8px;
+  margin: 20px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.my-city-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.koffee-kat {
+  display: block;
+  text-align: center;
+  padding: 3px;
 }
