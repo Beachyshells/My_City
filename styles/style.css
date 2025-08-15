@@ -18,8 +18,16 @@
   font-style: normal;
 }
 
+/*Main Page*/
+
 body {
   background-color: #211d39;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .hero {
@@ -31,15 +39,48 @@ body {
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
-}
-
-header {
   z-index: 1000;
+  color: white;
 }
 
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 60px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/Eagle_Monument-1782782929-612x612.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1000;
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+.first-row-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  grid-gap: 20px;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  color: #211d39;
+  z-index: 1000;
+
+  margin: 0;
+}
+
+.second-row-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*My page Headings*/
 h1,
 h3 {
-  color: white;
   margin-top: 60px;
 }
 h1 {
@@ -51,6 +92,94 @@ h3 {
 h4 {
   color: white;
 }
+
+/*Header Content*/
+
+.button {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  background-color: #8e1970;
+  opacity: 0.7;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 90ms ease-in-out;
+  z-index: 1000;
+}
+
+.button:hover {
+  background: linear-gradient(
+    to left,
+    rgba(138, 2, 108, 1),
+    rgba(138, 2, 108, 1)
+  );
+  color: rgb(251, 229, 238);
+  opacity: 0.9;
+}
+
+.art {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+.mySlides {
+  max-width: 150px;
+  max-height: 100px;
+  min-width: 100px;
+}
+
+/*Main Content*/
+
+.main-image {
+  display: block;
+  max-width: fit-content;
+
+  height: auto;
+  padding: 20px 20px;
+  border-radius: 4px;
+}
+
+.main-introduction {
+  padding: 20px;
+}
+.main-content {
+  display: block;
+  align-items: center;
+}
+
+/*Footer Content*/
+
+footer p {
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: justify;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.about-me-link {
+  display: none;
+}
+
+/*@media queries*/
 
 @media (max-width: 960px) {
   h1,
@@ -67,83 +196,6 @@ h4 {
     margin: 0;
     padding: 20px;
   }
-}
-
-.button {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-  background-color: #8e1970;
-  opacity: 0.7;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-
-  transition: all 90ms ease-in-out;
-  z-index: 1000;
-}
-
-.button:hover {
-  background: linear-gradient(
-    to left,
-    rgba(138, 2, 108, 1),
-    rgba(138, 2, 108, 1)
-  );
-  color: rgb(251, 229, 238);
-  opacity: 0.9;
-}
-
-footer {
-  color: white;
-  z-index: 1000;
-  text-align: center;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 60px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/Eagle_Monument-1782782929-612x612.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  z-index: 1000;
-  text-align: center;
-  padding: 40px;
-}
-
-footer p {
-  font-size: 13px;
-  line-height: 1.2;
-  text-align: justify;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer a {
-  color: white;
-  text-decoration: underline;
-  font-size: 12px;
-}
-
-.about-me-link {
-  display: none;
 }
 
 @media (max-width: 500px) {
@@ -173,9 +225,7 @@ footer a {
   }
 }
 
-.my-city {
-  color: white;
-}
+/*About-Page*/
 
 .my-city-container {
   padding: 20px;
