@@ -179,6 +179,9 @@ section.secondary {
 
 .card h5 {
   margin-bottom: 3px;
+  color: #211d39;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .card p {
