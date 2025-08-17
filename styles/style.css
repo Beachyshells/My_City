@@ -148,6 +148,10 @@ section.secondary {
   padding: 0;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 10px;
   flex-grow: 1;
@@ -213,8 +217,12 @@ section.secondary {
 /*Image row secondary section*/
 .image-responsive {
   width: 100%;
+  display: block;
 }
-
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 /*Footer container with grid 1fr 2fr 2fr*/
 .footer-content-container {
   display: grid;
