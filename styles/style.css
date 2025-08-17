@@ -104,7 +104,6 @@ section.primary {
 section.secondary {
   background-color: rgb(200, 198, 198);
   color: white;
-  max-height: 6400px;
   padding-bottom: 20px;
 }
 .grid-3-columns {
@@ -135,36 +134,47 @@ section.secondary {
 /*Card x3 inside secondary section*/
 
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  width: 95%;
-  height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-  grid-gap: 5px;
+  width: 100;
+  margin: 20px 10px;
+  gap: 5px;
 }
 
 .card-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0;
-  height: 215px;
 }
 
 .card-body {
-  padding: 20px;
+  padding: 10px;
+  flex-grow: 1;
 }
 
 .card-footer {
-  height: 50px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-footer a {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 .card h4 {
   font-family: "Poppins", sans-serif;
   color: #211d39;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 3px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .card h5 {
@@ -179,6 +189,7 @@ section.secondary {
   line-height: 1.4;
   margin-top: 3px;
   color: #211d39;
+  padding: 10px;
 }
 .card-body p a {
   color: #8e1970;
@@ -198,7 +209,6 @@ section.secondary {
 }
 /*Image row secondary section*/
 .image-responsive {
-  height: 100%;
   width: 100%;
 }
 
@@ -258,7 +268,6 @@ h3 {
   font-weight: 600;
   text-decoration: none;
   transition: all 90ms ease-in-out;
-  z-index: 1000;
 }
 
 .button:hover {
@@ -326,6 +335,10 @@ footer a {
     color: #211d39;
     background-color: white;
   }
+  .grid-3-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
@@ -336,10 +349,6 @@ footer a {
 
   .about-me-section {
     display: none;
-  }
-
-  .footer-content-container {
-    grid-template-columns: 1fr;
   }
 
   .about-me-link {
@@ -361,10 +370,6 @@ footer a {
     padding: 0 20px 5px 20px;
     font-size: 14px;
   }
-  .grid-3-columns {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 
   .card .card-body h4 {
     font-family: "Playfair Display";
@@ -373,6 +378,9 @@ footer a {
     font-size: 22px;
     line-height: 1.4;
     margin: 0;
+  }
+  .footer-content-container {
+    grid-template-columns: 1fr;
   }
 }
 
