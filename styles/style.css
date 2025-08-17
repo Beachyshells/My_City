@@ -19,18 +19,20 @@
 }
 
 /*Main Page*/
-
+/*Page back-ground color*/
 body {
   background-color: #211d39;
 }
 
+/*Content container*/
 .container {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
 }
 
-.hero-content {
+/*Hero container top page no grid*/
+.hero-content-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/Plattsburgh-monument-city-hall_Credit-Bruce-Carlin-1.jpg");
   background-size: cover;
@@ -42,18 +44,166 @@ body {
   color: white;
 }
 
+.hero-content-container h4 {
+  color: white;
+  letter-spacing: 1px;
+}
+/*Main container with grid 1fr/1fr*/
 .main-content-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  text-align: center;
-  font-size: 14px;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
   padding: 20px;
+}
+.main-content {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.main-content h2 {
+  text-align: left;
+  opacity: 0.5;
+  font-size: 13px;
   color: #211d39;
-  background-color: white;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.main-content h4 {
+  color: #211d39;
+  margin: 0;
+  margin-top: 0;
+  text-align: left;
+  opacity: 0.7;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.main-content p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 5px 0 5px;
+  margin-top: 30px;
+  font-family: "Playfair Display", serif;
+  color: #211d39;
 }
 
-.footer-content {
+/*Primary section*/
+section.primary {
+  background-color: white;
+  color: #211d39;
+  font-size: 14px;
+  text-align: center;
+}
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Secondary section*/
+section.secondary {
+  background-color: rgb(200, 198, 198);
+  color: white;
+  max-height: 6400px;
+  padding-bottom: 20px;
+}
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.secondary h2 {
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+  color: #211d39;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.secondary h3 {
+  text-align: center;
+  color: #211d39;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.secondary p {
+  color: #211d39;
+  letter-spacing: 1.1px;
+}
+/*Card x3 inside secondary section*/
+
+.card {
+  background-color: white;
+  width: 95%;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-gap: 5px;
+}
+
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  height: 215px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  height: 50px;
+}
+
+.card h4 {
+  font-family: "Poppins", sans-serif;
+  color: #211d39;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+
+.card h5 {
+  margin-bottom: 3px;
+}
+
+.card p {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-top: 3px;
+  color: #211d39;
+}
+.card-body p a {
+  color: #8e1970;
+}
+.card-body p a:hover {
+  font-size: larger;
+}
+
+/*Image row primary section*/
+.image-container {
+  max-height: 550px;
+  max-width: 550px;
+}
+.main-image {
+  max-width: 100%;
+  height: 100%;
+}
+/*Image row secondary section*/
+.image-responsive {
+  height: 100%;
+  width: 100%;
+}
+
+/*Footer container with grid 1fr 2fr 2fr*/
+.footer-content-container {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 60px;
@@ -79,33 +229,18 @@ h1 {
 h3 {
   font-size: 2rem;
 }
-h4 {
+/*button*/
+.btn {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: #211d39;
   color: white;
 }
-.main-content h5 {
-  color: #757575;
-  margin: 0;
-  margin-top: 0;
-  text-align: left;
-  opacity: 0.7;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.main-content h4 {
-  color: #211d39;
-  text-align: left;
-}
-.main-content p {
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.5;
-  font-style: normal;
-  margin: 5px 0 5px;
-  margin-top: 30px;
-  font-family: "Playfair Display", serif;
-  color: #211d39;
-}
+
 /*Header Content*/
 
 .button {
@@ -117,7 +252,7 @@ h4 {
   color: white;
   border: none;
   padding: 12px 24px;
-  border-radius: 6px;
+  border-radius: 2px;
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
@@ -136,16 +271,6 @@ h4 {
   opacity: 0.9;
 }
 
-/*Main Content*/
-
-.main-image {
-  display: block;
-  max-width: 100%;
-}
-
-.image-container {
-  margin: 0 auto;
-}
 /*Footer Content*/
 
 footer p {
@@ -189,21 +314,14 @@ footer a {
   }
   .main-content p {
     font-size: 16px;
-    margin-top: 15px;
-  }
-  .main-content h4 {
-    text-align: right;
+    margin: 15px auto;
+    align-items: center;
   }
 
-  .main-image {
-    display: grid;
-    max-width: 550px;
-    align-items: center;
-    margin: auto;
-  }
   .main-content-container {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
     font-size: 16px;
     color: #211d39;
     background-color: white;
@@ -220,17 +338,16 @@ footer a {
     display: none;
   }
 
-  .footer-content {
-    display: contents;
-    align-items: center;
-    justify-content: space-between;
+  .footer-content-container {
+    grid-template-columns: 1fr;
   }
 
   .about-me-link {
     display: block;
     padding: 10px;
     border-radius: 6px;
-    max-width: fit-content;
+    width: auto;
+    height: fit-content;
     background-color: white;
     color: #211d39;
     margin: 0 auto;
@@ -243,6 +360,19 @@ footer a {
   .main-content p {
     padding: 0 20px 5px 20px;
     font-size: 14px;
+  }
+  .grid-3-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card .card-body h4 {
+    font-family: "Playfair Display";
+    color: #211d39;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 0;
   }
 }
 
@@ -267,15 +397,6 @@ footer a {
 .my-city-container p,
 a {
   color: white;
-}
-
-img {
-  display: block;
-  max-width: 50%;
-  height: auto;
-  width: 100%;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .koffee-kat {
