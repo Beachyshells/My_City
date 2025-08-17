@@ -397,34 +397,52 @@ footer a {
 
 /*About-Page*/
 
-.my-city-container {
-  padding: 20px;
-  background-image: url("images/koffee-kat.jpg");
-  border-radius: 8px;
-  margin: 20px 0;
+.hero-content-container-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/Lake-Champlain.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-}
-
-.my-city-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.my-city-container p,
-a {
+  text-align: center;
+  padding: 20px;
+  z-index: 1000;
   color: white;
 }
 
-.koffee-kat {
-  display: block;
-  text-align: center;
-  padding: 3px;
+.my-city-container {
+  display: flex;
+
+  width: 800px;
+  background-color: rgb(166, 164, 170);
+}
+.my-city {
+  background-color: white;
+}
+.my-city-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.my-city-container p,
+a {
+  color: #211d39;
+  padding: 20px;
+  text-align: justify;
+  padding-top: 0;
+  line-height: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .detour {
   color: yellow;
   margin: 300px auto;
+}
+@media (max-width: 760px) {
+  .my-city-grid {
+    grid-template-columns: 1fr;
+  }
 }
